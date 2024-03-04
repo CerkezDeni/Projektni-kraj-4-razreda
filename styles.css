@@ -230,7 +230,7 @@
 .main__content h1 {
     font-size: 4rem;
     background-color: #ff5eb5;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: radial-gradient(422px at -10.3% 110.7%, rgb(219, 76, 180) 9.5%, rgb(231, 119, 209) 50.8%, rgb(255, 180, 241) 88.5%);;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -317,13 +317,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #ff8177;
-    background-image: linear-gradient(to right,
-            #ff8177 0%,
-            #ff867a 0%,
-            #ff8c7f 21%,
-            #f99185 52%,
-            #cf556c 78%,
-            #b12a5b 100%);
+    background-image: radial-gradient(422px at -10.3% 110.7%, rgb(219, 76, 180) 9.5%, rgb(231, 119, 209) 50.8%, rgb(255, 180, 241) 88.5%);;
     background-size: 100%;
     margin-bottom: 1rem;
     font-size: 2.5rem;
@@ -358,7 +352,7 @@
 .logos-slide{
     display: inline-block;
     white-space: nowrap;
-    animation: 20s slide infinite linear;
+    animation: 25s slide infinite linear;
     /* background: #131313;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0,0,0,0.1);
@@ -433,7 +427,7 @@
     }
 }
 
-/* Services section */
+/* Services section slike */
 
 
 .services {
@@ -446,13 +440,7 @@
 
 .services h1 {
     background-color: #ff8177;
-    background-image: linear-gradient(to right,
-            #ff8177 0%,
-            #ff867a 0%,
-            #ff8c7f 21%,
-            #f99185 52%,
-            #cf556c 78%,
-            #b12a5b 100%);
+    background-image: radial-gradient(422px at -10.3% 110.7%, rgb(219, 76, 180) 9.5%, rgb(231, 119, 209) 50.8%, rgb(255, 180, 241) 88.5%);;
     background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
@@ -665,5 +653,143 @@
         margin: 0;
         padding: 10px;
         width: 100%;
+    }
+}
+
+/* Services opis*/
+
+.container{
+    min-height: 80vh;
+    width: 100%;
+    background-color: #141414;
+}
+
+.service-wrapper{
+    padding: 5% 8%;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service h1{
+    color: #fff;
+    font-size: 4rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(4, 52, 83);
+    background: radial-gradient(422px at -10.3% 110.7%, rgb(219, 76, 180) 9.5%, rgb(231, 119, 209) 50.8%, rgb(255, 180, 241) 88.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+.service h1:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 80%;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.05);
+}
+.service h1 span{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    background-color: #ff5eb5;
+    animation: anim 5s linear infinite;
+}
+@keyframes anim{
+    95%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        left: 88%;
+    }
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin-top: 80px;
+    
+}
+.card{
+    height: 350px;
+    width: 370px;
+    background-color: rgb(219, 76, 180);
+    padding: 3% 8%;
+    border: 0.2px solid #d0c7d4;
+    border-radius: 8px;
+    transition: .6s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.card:after{
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: -200px;
+    width: 120%;
+    transform: rotate(50deg);
+    background-color: #fff;
+    height: 18px;
+    filter:blur(30px);
+    opacity: 0.5;
+    transition: 1s;
+}
+.card:hover:after{
+    width: 225%;
+    top:-100%;
+}
+.card i{
+    color: rgb(255, 180, 241);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 4.8rem;
+}
+.card h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.card p{
+    text-align: left;
+    width: 100%;
+    margin: 12px 0;
+    color: rgba(255,255,255,0.6);
+}
+.card:hover{
+    background-color: transparent;
+    transform: translateY(-8px);
+    border-color: #21d4fd;
+}
+.card:hover i{
+    color: #21d4fd;
+}
+
+@media screen and (max-width:1200px){
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:900px){
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    h1{
+        font-size: 3.5rem;
     }
 }
