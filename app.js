@@ -6,6 +6,8 @@ menu.addEventListener('click', function() {
     menuLinks.classList.toggle('active');
 });
 
+
+
 // document.addEventListener("DOMContentLoaded", function() {
 //     var copy1 = document.querySelector(".logos-slide").cloneNode(true);
 //     document.querySelector(".logos").appendChild(copy1);
