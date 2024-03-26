@@ -24,6 +24,10 @@ document.getElementById("getStartedButton1").addEventListener("click", function(
 document.getElementById("getStartedButton2").addEventListener("click", function() {
     window.location.href = "services.html";
 });
+document.getElementById("kontaktirajteNas").addEventListener("click", function() {
+    window.location.href = "contact.html";
+});
+
 
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".services__card").forEach(function(card) {
