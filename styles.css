@@ -5,8 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 /* #ff5eb5 */
 .navbar {
     background: #131313;
@@ -204,13 +202,10 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-
 /* Hero Section CCS */
-
 .main {
     background-color: #141414;
 }
-
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -226,19 +221,16 @@
     max-width: 1300px;
     padding: 0 0px;
 }
-
 .main__content h1 {
     font-size: 4rem;
     background-color: #ff5eb5;
     background-image: radial-gradient(422px at -10.3% 110.7%, rgb(219, 76, 180) 9.5%, rgb(231, 119, 209) 50.8%, rgb(255, 180, 241) 88.5%);
-    ;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
-
 .main__content h2 {
     font-size: 4rem;
     background-color: #ff5eb5;
@@ -249,14 +241,12 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
-
 .main__container p {
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
 }
-
 .main__btn {
     font-size: 1rem;
     background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
@@ -270,14 +260,12 @@
     transition: all 0.35s;
     outline: none;
 }
-
 .main__btn a {
     position: relative;
     z-index: 2;
     color: #fff;
     text-decoration: none;
 }
-
 .main__btn:after {
     position: absolute;
     content: '';
@@ -289,32 +277,69 @@
     transition: all 0.35s;
     border-radius: 4px;
 }
-
 .main__btn:hover {
     color: #fff
 }
-
 .main__btn:hover:after {
     width: 100%;
 }
-
 .main__img--container {
     text-align: center;
 }
-
 #main__img {
     height: 80%;
     width: 80%;
 }
-
 :root {
     --background: #E7E6E6;
 }
-
+@media screen and (max-width: 768px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    .main__content h2 {
+        font-size: 3rem;
+    }
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .main__content h2 {
+        font-size: 2rem;
+    }
+    .main__content p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
 /* slider */
 .logos h1 {
     color: #fff;
-    font-size: 4rem;
+    font-size: 5rem;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: transparent;
     letter-spacing: 4px;
@@ -368,49 +393,7 @@
         transform: translateX(-100%);
     }
 }
-@media screen and (max-width: 768px) {
-    .main__container {
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-self: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90vh;
-    }
-    .main__content {
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-    .main__content h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem;
-    }
-    .main__content h2 {
-        font-size: 3rem;
-    }
-    .main__content p {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-    }
-}
-@media screen and (max-width: 480px) {
-    .main__content h1 {
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
-    .main__content h2 {
-        font-size: 2rem;
-    }
-    .main__content p {
-        margin-top: 2rem;
-        font-size: 1.5rem;
-    }
-    .main__btn {
-        padding: 12px 36px;
-        margin: 2.5rem 0;
-    }
-}
+
 
 /* Services section slike */
 .services {
@@ -856,3 +839,99 @@
     }
 }
 
+/* SERVICES HTML */
+.servisi{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.servisi .service2 h1{
+    color: #fff;
+    font-size: 4rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(4, 52, 83);
+    background: radial-gradient(422px at -10.3% 110.7%, rgb(219, 76, 180) 9.5%, rgb(231, 119, 209) 50.8%, rgb(255, 180, 241) 88.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+.service2{
+    height: 100%;
+    background-color: #141414;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 5%;
+}
+.service2 .headin{
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+.servisi .service2 .headin span{
+    color: #ff5eb5;
+}
+.servisi .service2 .service_container2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 15px;
+}
+.servisi .service2 .service_container2 .service_box{
+    max-width: 350px;
+    flex: 1 1 250px;
+    text-align: center;
+    padding: 20px;
+    background-color: #250e1d;
+    border-radius: 10px;
+    transition: .4s ease;
+    border: transparent solid 3px;
+    min-height: 300px;
+}
+.servisi .service2 .service_container2 .service_box:hover{
+    transform: scale(1.1);
+    border: #ff5eb5 solid 3px;
+}
+.servisi .service2 .service_container2 .service_box i{
+    font-size: 50px;
+    color: #ff5eb5;
+    text-shadow: 0 0 10px #ff5eb5;
+}
+.servisi .service2 .service_container2 .service_box #strelica{
+    color: #eee;
+    text-shadow: #eee;
+}
+.servisi .service2 .service_container2 .service_box h3{
+    font-size: 26px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.servisi .service2 .service_container2 .service_box p{
+    color: #eee;
+    font-size: 17px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.servisi .service2 .service_container2 .service_box .btn{
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #eee;
+    background-color: #ff5eb5;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: .3s ease;
+    text-decoration: none;
+}
+.servisi .service2 .service_container2 .service_box .btn:hover{
+    box-shadow: 0 0 10px #ff5eb5;
+}
