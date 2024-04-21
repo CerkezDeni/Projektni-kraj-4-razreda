@@ -41,3 +41,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+function onLinkClick() {
+    document.getElementsByTagName('h2')[3].scrollIntoView();
+    // will scroll to 4th h3 element
+
+    document.querySelector('.btn').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetId = this.getAttribute('href').substring(1); // Get the ID of the target element
+        const targetElement = document.getElementById(targetId); // Get the target element
+        if (targetElement) {
+            // Smooth scroll to the target element
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });}

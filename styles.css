@@ -4,7 +4,9 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* #ff5eb5 */
 .navbar {
     background: #131313;
@@ -943,4 +945,73 @@
 .servisi .service2 .service_container2 .service_box .btn:hover{
     box-shadow: 0 0 10px #ff5eb5;
 }
-
+/*template za naslove */
+.naslovi{
+    background-color: #131313;
+}
+.naslovi h1{
+    text-align: center;
+    color: #fff;
+    font-size: 4rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(4, 52, 83);
+    background: radial-gradient(422px at -10.3% 110.7%, rgb(219, 76, 180) 9.5%, rgb(231, 119, 209) 50.8%, rgb(255, 180, 241) 88.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding-bottom: 30px;
+}
+/* slike kod servica */
+.slike-fotografiranje{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Reduce to 4 columns for better visibility */
+    grid-template-rows: repeat(2, 15vw); /* Maintain aspect ratio */
+    grid-gap: 10px;
+    background-color: #131313;
+    padding: 20px;
+}
+.slike-fotografiranje img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    transition: 400ms;
+}
+.slike-fotografiranje img:hover{
+    transform: scale(1.03);
+}
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.gallery__item--3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.gallery__item--4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.gallery__item--5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
