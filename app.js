@@ -42,15 +42,87 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 function onLinkClick() {
-    document.getElementsByTagName('h2')[3].scrollIntoView();
-    // will scroll to 4th h3 element
+    const offset = -50; // Adjust this value to set the offset from the top
 
+    // Photography Services
     document.querySelector('.btn').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default anchor behavior
         const targetId = this.getAttribute('href').substring(1); // Get the ID of the target element
         const targetElement = document.getElementById(targetId); // Get the target element
         if (targetElement) {
-            // Smooth scroll to the target element
+            // Smooth scroll to the target element with an offset from the top
             targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            window.scrollBy(0, offset); // Scroll 50px above the target element
         }
-    });}
+    });
+
+    // Videography Services
+    document.querySelector('.btn2').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetId = this.getAttribute('href').substring(1); // Get the ID of the target element
+        const targetElement = document.getElementById(targetId); // Get the target element
+        if (targetElement) {
+            // Smooth scroll to the target element with an offset from the top
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            window.scrollBy(0, offset); // Scroll 50px above the target element
+        }
+    });
+
+    // Graphic Design
+    document.querySelector('.btn3').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetId = this.getAttribute('href').substring(1); // Get the ID of the target element
+        const targetElement = document.getElementById(targetId); // Get the target element
+        if (targetElement) {
+            // Smooth scroll to the target element with an offset from the top
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            window.scrollBy(0, offset); // Scroll 50px above the target element
+        }
+    });
+
+    // Website Development and Optimization
+    document.querySelector('.btn4').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetId = this.getAttribute('href').substring(1); // Get the ID of the target element
+        const targetElement = document.getElementById(targetId); // Get the target element
+        if (targetElement) {
+            // Smooth scroll to the target element with an offset from the top
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            window.scrollBy(0, offset); // Scroll 50px above the target element
+        }
+    });
+
+    // Paid Advertising
+    document.querySelector('.btn5').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetId = this.getAttribute('href').substring(1); // Get the ID of the target element
+        const targetElement = document.getElementById(targetId); // Get the target element
+        if (targetElement) {
+            // Smooth scroll to the target element with an offset from the top
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            window.scrollBy(0, offset); // Scroll 50px above the target element
+        }
+    });
+
+    // Video Editing
+    document.querySelector('.btn6').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetId = this.getAttribute('href').substring(1); // Get the ID of the target element
+        const targetElement = document.getElementById(targetId); // Get the target element
+        if (targetElement) {
+            // Smooth scroll to the target element with an offset from the top
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            window.scrollBy(0, offset); // Scroll 50px above the target element
+        }
+    });
+}
+
+function openWebsite() {
+    window.open("https://ballersapp.com/", "_blank");
+}
+function openWebsite2() {
+    window.open("https://www.outfit-fitness.com/", "_blank");
+}
+function openWebsite3() {
+    window.open("https://osibovapartments.com/", "_blank");
+}
