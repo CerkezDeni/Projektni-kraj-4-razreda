@@ -370,6 +370,16 @@ html {
         transform: translateX(-100%);
     }
 }
+@media screen and (max-width:768px) {
+    .logos h1 {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .logos h1 {
+        font-size: 3rem;
+    }
+}
 
 
 /* Services section slike */
@@ -445,8 +455,8 @@ html {
         height: 1600px;
     }
     .services h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
+        font-size: 4rem;
+        margin-top: 3rem;
     }
 }
 @media screen and (max-width:480px) {
@@ -454,7 +464,7 @@ html {
         height: 1400px;
     }
     .services h1 {
-        font-size: 1.2rem;
+        font-size: 3rem;
     }
     .services__card {
         width: 300px;
@@ -507,6 +517,17 @@ html {
     background-color: #ff5eb5;
     animation: anim 5s linear infinite;
 }
+@media screen and (max-width:768px) {
+    .service h1 {
+        padding-top: 5rem;
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .service h1 {
+        font-size: 3rem;
+    }
+}
 @keyframes anim {
     95% {
         opacity: 1;
@@ -517,6 +538,7 @@ html {
         left: 88%;
     }
 }
+
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -697,9 +719,18 @@ html {
     cursor: pointer; 
     margin-top: 25px;
 }
-@media screen and (max-width:1200px) {
+
+@media screen and (max-width:768px) {
     .kontaktirajte-nas h1{
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .kontaktirajte-nas h1{
+        font-size: 2.5rem;
+    }
+    .kontaktirajte-nas button{
+        font-size: 1.5rem;
     }
 }
 
@@ -938,6 +969,17 @@ html {
     position: relative;
     padding-bottom: 30px;
 }
+@media screen and (max-width:768px) {
+    .naslovi h1 {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .naslovi h1 {
+        font-size: 2.5rem;
+    }
+}
+
 /* slike kod servica */
 .slike-fotografiranje{
     display: grid;
@@ -991,6 +1033,7 @@ html {
     grid-row-end: 3;
 }
 /* video videography */
+
 .video{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -1009,6 +1052,7 @@ html {
     cursor: pointer;
     transition: 400ms;
 }
+
 .video video:hover{
     transform: scale(1.03);
 }
