@@ -26,6 +26,12 @@ document.getElementById("getStartedButton2").addEventListener("click", function(
 });
 document.getElementById("kontaktirajteNas").addEventListener("click", function() {
     window.location.href = "contact.html";
+    
+});
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("kontaktirajteNas2").addEventListener("click", function() {
+        window.location.href = "contact.html";
+    });
 });
 
 
