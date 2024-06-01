@@ -48,8 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 function onLinkClick() {
-    const offset = -50; // Adjust this value to set the offset from the top
-
+    const offset = -50; 
     // Photography Services
     document.querySelector('.btn').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default anchor behavior
