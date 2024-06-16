@@ -87,13 +87,12 @@ function onLinkClick() {
 
     // Website Development and Optimization
     document.querySelector('.btn4').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default anchor behavior
-        const targetId = this.getAttribute('href').substring(1); // Get the ID of the target element
-        const targetElement = document.getElementById(targetId); // Get the target element
+        event.preventDefault(); 
+        const targetId = this.getAttribute('href').substring(1); 
+        const targetElement = document.getElementById(targetId); 
         if (targetElement) {
-            // Smooth scroll to the target element with an offset from the top
             targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            window.scrollBy(0, offset); // Scroll 50px above the target element
+            window.scrollBy(0, offset);
         }
     });
 

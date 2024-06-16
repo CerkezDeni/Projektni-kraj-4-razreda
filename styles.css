@@ -350,7 +350,7 @@ html {
 .logos-slide {
     display: inline-block;
     white-space: nowrap;
-    animation: 140s slide infinite linear;
+    animation: 280s slide infinite linear;
     /* background: #131313;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0,0,0,0.1);
